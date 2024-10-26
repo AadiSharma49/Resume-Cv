@@ -1,0 +1,336 @@
+:root {
+    --primary-color: #3B4856;
+    --secondary-color: #2C3E50;
+    --text-color: #333;
+    --light-gray: #f5f5f5;
+    --border-color: #ddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.profile-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile-info h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contact-info a, .contact-info span {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-info a:hover {
+    opacity: 0.8;
+}
+
+
+.section {
+    padding: 3rem 0;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profile-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+}
+
+
+.experience-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+#only-link
+{
+    text-decoration: none;
+    color: inherit;
+}
+.main-line
+{
+    margin-top: 5px;
+}
+#line{
+    text-decoration:underline;
+    margin-top: 5px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.company-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.job-title {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.location {
+    color: #666;
+}
+
+.responsibilities {
+    margin-top: 1rem;
+}
+
+.responsibilities li {
+    margin-bottom: 0.5rem;
+    list-style-type: none;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.responsibilities li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-tag {
+    background-color: var(--light-gray);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    font-weight: 700;
+}
+
+.skill-tag:hover {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.project-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.project-role {
+    font-style: italic;
+}
+
+.project-details {
+    margin-top: 1rem;
+}
+
+.github-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
+
+.education-item {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.degree {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.institution {
+    font-style: italic;
+}
+
+.education-details {
+    margin-top: 0.5rem;
+    color: #666;
+}
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.certificate-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.certificate-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    list-style: none;
+}
+#footer
+{
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: #2C3E50;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#foot-icon
+{
+    font-size: 2rem;
+    padding: 10px;
+    margin: 15px 10px;
+}
+.last-line
+{
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 1rem;
+    margin-bottom: 9px;
+}
+#foot-icon:hover
+{
+    transition-duration:250ms;
+    color: rgba(255, 255, 255, 0.637);
+    cursor: pointer;
+}
+*::-webkit-scrollbar {
+    height: 9px;
+    width: 9px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 15px;
+    background-color: #8B9192;
+    border: 1px double #FFFFFF;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #A5ADAE;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #1E2122;
+    border: 2px solid #FFFFFF;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #3B353B;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #000000;
+  }
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .experience-header, .education-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+}
